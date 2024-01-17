@@ -1,31 +1,34 @@
 import React from "react";
+
 import {
     AddressSetupContainer,
     AddressSetupContentWrapper,
     AddressSetupLogoWrapper,
+    AddressSetupLogo,
     AddressSetupLogoTitleWrapper,
     AddressSetupLogoTitle,
     AddressSetupFooterWrapper,
+    AddressSetupFooterContentWrapper,
     AddressSetupFooterTitleWrapper,
     AddressSetupFooterTitle,
     AddressSetupFooterContentLogoWrapper,
-    AddressSetupFooterContentLogo,
-    AddressSetupFooterContentWrapper as FooterContentWrapper, // Rename the import
-} from "./styled/LoginPage.main.AddressSetup.style";
+} from './styled/LoginPage.main.AddressSetup.style'
 
 const AddressSetup = () => {
     return (
         <AddressSetupContainer>
-            <AddressSetupContentWrapper>
+           <AddressSetupContentWrapper>
                 <AddressSetupLogoWrapper>
-                    {/* Use the correct component name: AddressSetupLogoTitle */}
+                    <AddressSetupLogo  />
+                </AddressSetupLogoWrapper>
+                <AddressSetupLogoTitleWrapper>
                     <AddressSetupLogoTitle>
                         우리동네 공동구매<br /> <strong>모아모아</strong>로 시작해요!
                     </AddressSetupLogoTitle>
-                </AddressSetupLogoWrapper>
-            </AddressSetupContentWrapper>
+                </AddressSetupLogoTitleWrapper>
+           </AddressSetupContentWrapper>
 
-            <AddressSetupFooterWrapper>
+           <AddressSetupFooterWrapper>
                 <AddressSetupFooterTitleWrapper>
                     <AddressSetupFooterTitle>
                         SNS계정으로 시작하기
@@ -33,15 +36,15 @@ const AddressSetup = () => {
                 </AddressSetupFooterTitleWrapper>
                 <AddressSetupFooterContentWrapper>
                     <button>
-                        <AddressSetupFooterContentLogoWrapper>
-                            <AddressSetupFooterContentLogo src="" />
-                        </AddressSetupFooterContentLogoWrapper>
-                        카카오 로그인
+                    <AddressSetupFooterContentLogoWrapper>
+                        <AddressSetupFooterContentLogo />
+                    </AddressSetupFooterContentLogoWrapper>
+                    카카오 로그인
                     </button>
                 </AddressSetupFooterContentWrapper>
-            </AddressSetupFooterWrapper>
+           </AddressSetupFooterWrapper>
         </AddressSetupContainer>
-    );
-};
+    )
+}
 
-export default AddressSetup;
+export default AddressSetup
